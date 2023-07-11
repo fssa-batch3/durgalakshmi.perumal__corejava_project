@@ -3,7 +3,14 @@ package day01.practice;
 public class Cat {
     private String color;
     private int age;
+    private String speaks;
 
+
+    public Cat() {
+        this.speaks = "Speaks: Meow!";
+    }
+    
+    
     public int getAge() {
         return age;
     }
@@ -19,6 +26,14 @@ public class Cat {
     public void setColor(String color) {
         this.color = color;
     }
+    public String getSpeaks() {
+        return speaks;
+    }
+    
+
+    
+    
+    
 
     public static void main(String[] args) {
         Cat cat1 = new Cat();
@@ -32,12 +47,12 @@ public class Cat {
         System.out.println("Cat 1:");
         System.out.println("Age: " + cat1.getAge());
         System.out.println("Color: " + cat1.getColor());
-        System.out.println("Speaks: Meow!");
+        System.out.println(cat1.getSpeaks());
         
         System.out.println("Cat 2:");
         System.out.println("Age: " + cat2.getAge());
         System.out.println("Color: " + cat2.getColor());
-        System.out.println("Speaks: Meow!");
+        System.out.println(cat1.getSpeaks());
     }
 }
 
