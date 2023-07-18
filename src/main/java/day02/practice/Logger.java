@@ -3,13 +3,10 @@ package day02.practice;
 public class Logger {
 	
 	
-	String msg = "hi";
 	    public static void debug(String msg) {
 	        System.out.println("DEBUG: " + msg);
 	    }
 	    
-	    
-	   
 	    public static void info(String msg) {
 	        System.out.println("INFO: " + msg);
 	    }
@@ -29,6 +26,18 @@ public class Logger {
 	    
 	    public static void error(int num) {
 	        System.err.println("ERROR: " + num);
+	    }
+	    
+	    public static void debug(float msg) {
+	        System.out.println("DEBUG: " + msg);
+	    }
+	    
+	    public static void debug(double msg) {
+	        System.out.println("DEBUG: " + msg);
+	    }
+	    
+	    public static void debug(String msg) {
+	        System.out.println("DEBUG: " + msg);
 	    }
 	}
 
