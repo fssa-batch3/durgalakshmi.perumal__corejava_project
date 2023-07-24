@@ -2,6 +2,7 @@ package day09.practice;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class SortListOfIntegers {
@@ -17,13 +18,14 @@ public class SortListOfIntegers {
             
         }  Collections.sort(numbers);
         scanner.close();
-     
+        System.out.print("Sorted list: ");
+
         for (int number : numbers) {
-            System.out.print("Sorted list: "+ number + " ");
+            System.out.print(number + " ");
         }
 
     
-      
+    
 
     }
 }

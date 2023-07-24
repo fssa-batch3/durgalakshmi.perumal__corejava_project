@@ -5,6 +5,12 @@ public class Task {
     private String taskName;
     private int priority;
 
+    public Task() {
+      
+        this.taskName = "";
+        this.priority = 0;
+    }
+
     public Task(String taskName, int priority) {
         this.taskName = taskName;
         this.priority = priority;
