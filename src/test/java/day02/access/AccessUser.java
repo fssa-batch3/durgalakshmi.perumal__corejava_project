@@ -1,6 +1,6 @@
 package day02.access;
 
-import day02.
+
 import day01.solved.packageOne.Bicycle;
 
 public class AccessUser {

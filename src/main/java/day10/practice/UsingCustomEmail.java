@@ -3,8 +3,7 @@ package day10.practice;
 import java.util.ArrayList;
 import java.util.Collections;
 
-
-public class UsingCustomEmail {
+ class UsingCustomemail {
 	
 	private String email;
 
@@ -26,7 +25,7 @@ public class UsingCustomEmail {
 
 }
 
-public class EmailValidator  {
+class EmailValidator  {
 	public static boolean isValidEmail(String emailId) throws InvalidEmailException {
 		if (email == null || !email.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
             throw new InvalidEmailException("Invalid email format: " + email);
@@ -34,4 +33,7 @@ public class EmailValidator  {
         return true;
 	}
 	}
+public class UsingCustomEmail {
+    public static void main(String[] args) {
 
+}}
