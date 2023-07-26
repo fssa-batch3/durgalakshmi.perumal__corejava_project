@@ -15,17 +15,13 @@ public class CollectionNumbersTest {
         numbers.add(12);
         numbers.add(1);
 
-        // Verify the list before sorting
         List<Integer> originalList = new ArrayList<>(numbers);
 
-        // Sort the list using Collections.sort()
         Collections.sort(numbers);
 
-        // Verify that the list is sorted correctly
         List<Integer> expectedSorted = Arrays.asList(1, 8, 9, 12, 45);
         assertEquals(expectedSorted, numbers);
 
-        // Verify that the original list remains unchanged
         assertEquals(originalList, numbers);
     }
 }

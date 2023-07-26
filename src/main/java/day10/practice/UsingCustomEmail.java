@@ -8,6 +8,10 @@ import java.util.Collections;
 	private String email;
 
 
+	public UsingCustomemail(String email2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void mail(String email) {
 		
 		this.email = email;
@@ -25,15 +29,18 @@ import java.util.Collections;
 
 }
 
-class EmailValidator  {
-	public static boolean isValidEmail(String emailId) throws InvalidEmailException {
-		if (email == null || !email.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
-            throw new InvalidEmailException("Invalid email format: " + email);
-        }
-        return true;
+ class EmailValidator {
+	    public static boolean isValidEmail(String emailId) throws InvalidEmailException {
+	        if (emailId == null || !emailId.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
+	            throw new InvalidEmailException("Invalid email format: " + emailId);
+	        }
+	        return true;
+	    }
 	}
+ class InvalidEmailException extends Exception {
+	    public InvalidEmailException(String message) {
+	        super(message);
+	    }
 	}
-public class UsingCustomEmail {
-    public static void main(String[] args) {
 
-}}
+

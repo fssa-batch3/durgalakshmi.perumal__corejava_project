@@ -39,4 +39,14 @@ public class Task {
         System.out.println("Task 1: " + task1.getTaskName() + " Priority: "+ task1.getPriority());
         System.out.println("Task 2: " + task2.getTaskName() + " Priority: " + task2.getPriority());
     }
+
+	public String getEmail_id() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getPassword() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
